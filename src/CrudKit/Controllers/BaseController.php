@@ -99,7 +99,7 @@ class BaseController {
                     $pageMap []= array(
                         'id' => $pageItem->getId(),
                         'name' => $pageItem->getName(),
-                        'icon' => $pageItem->getIcon() ? $pageItem->getIcon() : $this->app->getIcon()
+                        'icon' => $pageItem->getIcon()
                     );
                 }
                 ValueBag::set("flashbag", FlashBag::getFlashes());

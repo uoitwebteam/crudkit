@@ -71,12 +71,13 @@ class CrudKitApp {
     public function getAppName () {
         return $this->title;
     }
+    
+    public function setDefaultIcon ($icon) {
+        $this->icon = $icon;
+    }
 
     public function getDefaultIcon () {
         return $this->icon;
-    }
-    public function setDefaultIcon ($icon) {
-        $this->icon = $icon;
     }
 
     public function getPages () {
