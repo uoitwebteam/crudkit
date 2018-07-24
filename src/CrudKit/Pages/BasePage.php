@@ -19,6 +19,18 @@ abstract class BasePage implements Page
         return $this->name;
     }
 
+    /**
+     * @param $icon
+     * @return $this
+     */
+    public function setIcon ($icon) {
+        $this->icon = $icon;
+        return $this;
+    }
+    public function getIcon () {
+        return $this->icon;
+    }
+
     protected $app = null;
     public function init ($app = null) {
         if ($app == null) {

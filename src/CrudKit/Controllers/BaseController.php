@@ -98,7 +98,8 @@ class BaseController {
                 foreach($this->app->getPages() as $pageItem) {
                     $pageMap []= array(
                         'id' => $pageItem->getId(),
-                        'name' => $pageItem->getName()
+                        'name' => $pageItem->getName(),
+                        'icon' => $pageItem->getIcon()
                     );
                 }
                 ValueBag::set("flashbag", FlashBag::getFlashes());

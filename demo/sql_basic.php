@@ -30,6 +30,7 @@ $app->useLogin ($login);
 
 $page = new SQLiteTablePage ("sqlite2", "fixtures/chinook.sqlite");
 $page->setName("Customer Management")
+    ->setIcon("user")
     ->setTableName("Customer")
     ->setRowsPerPage (20)
     ->setPrimaryColumn("CustomerId")

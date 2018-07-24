@@ -22,7 +22,7 @@
             <ul class="sidebar-menu">
                 <li class="header">PAGES</li>
                 {% for item in pageMap %}
-                    <li role="presentation" {% if item.id == currentId %}class="active"{% endif %}><a href="{{ route.openPage(item.id)|raw }}"><i class="fa fa-book"></i> {{ item.name }}</a></li>
+                    <li role="presentation" {% if item.id == currentId %}class="active"{% endif %}><a href="{{ route.openPage(item.id)|raw }}"><i class="fa fa-{{ item.icon ?: "book" }}"></i> {{ item.name }}</a></li>
                 {% endfor %}
                 {% if userParams != null %}
                 <li class="header">EXTRA</li>
