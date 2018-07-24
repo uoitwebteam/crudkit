@@ -6,6 +6,7 @@ abstract class BasePage implements Page
 {
     protected $name = "";
     protected $id = null;
+    protected $icon = null;
 
     /**
      * @param $name
