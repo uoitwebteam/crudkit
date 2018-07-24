@@ -23,6 +23,7 @@ class CrudKitApp {
     protected $pageById = array();
 
     protected $title = "CrudKit";
+    protected $icon = "database";
 
     /**
      * Set a static root which contains the "crudkit/" directory of css and JS
@@ -69,6 +70,13 @@ class CrudKitApp {
 
     public function getAppName () {
         return $this->title;
+    }
+
+    public function getDefaultIcon () {
+        return $this->icon;
+    }
+    public function setDefaultIcon ($icon) {
+        $this->icon = $icon;
     }
 
     public function getPages () {
